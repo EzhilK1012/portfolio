@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezhilarasi Krishnamoorthy - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-3xl font-semibold">Ezhilarasi Krishnamoorthy</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-white hover:text-gray-200">About</a>
+                <a href="#projects" class="text-white hover:text-gray-200">Projects</a>
+                <a href="#contact" class="text-white hover:text-gray-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-900 text-white py-32 relative">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('your-background-image.jpg'); opacity: 0.8;"></div>
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-5xl font-bold mb-4">Hello, I'm Ezhilarasi</h1>
+            <p class="text-xl mb-8">A Passionate Developer and Innovator</p>
+            <a href="#contact" class="bg-white text-blue-500 py-2 px-6 rounded-full hover:bg-blue-100 hover:text-blue-600 transition duration-300 ease-in-out text-lg">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-semibold">About Me</h2>
+                <p class="text-gray-700 mt-4">
+                    Hi, I'm Ezhilarasi Krishnamoorthy. A recent graduate with a passion for technology and a desire to make a positive impact. My journey begins with the simple goal of transforming knowledge into action, innovation into impact, and curiosity into results.
+                </p>
+                <p class="text-gray-700 mt-4">
+                    I am skilled in C, C++, Python, Data Structures, Algorithms, Networking, AWS Cloud, Numpy, Django, and front-end technologies like HTML, CSS, and JavaScript. My interests span across Machine Learning, Software Development, and Cybersecurity.
+                </p>
+                <p class="text-gray-700 mt-4">
+                    Let's embark on this journey together, and let curiosity guide us to new heights.
+                </p>
+                <!-- Add the information about your Web Development Internship at WBB -->
+                <p class="text-gray-700 mt-4">
+                    I started my Web Development Internship at We Build Brands (WBB) on September 18, 2023. During this internship, I am gaining hands-on experience and furthering my skills in web development, contributing to exciting projects, and learning from a dynamic team of professionals.
+                </p>
+                <a href="https://drive.google.com/uc?export=download&id=1IIJeXxq7DDqmAioV3eaZRixYRng0-XR4" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out" target="_blank">Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript for toggling project details -->
+<script>
+    function toggleDetails(projectId) {
+        const projectDetails = document.getElementById(projectId + 'Details');
+        if (projectDetails.style.display === 'none' || projectDetails.style.display === '') {
+            projectDetails.style.display = 'block';
+        } else {
+            projectDetails.style.display = 'none';
+        }
+    }
+</script>
+
+<!-- Project Section -->
+<section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto">
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold">Projects</h2>
+        </div>
+
+        <!-- Project 1: Smart Selfie Attendance Networking -->
+        <div class="mt-10 p-6 bg-gray-100 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-blue-500">Project 1: Smart Selfie Attendance Networking</h3>
+            <p class="text-gray-700 mt-4">
+                The Smart Selfie Attendance Networking project is a cutting-edge solution designed to streamline the attendance tracking process. Leveraging advanced facial recognition technology, this project offers a convenient and efficient way for organizations, schools, and institutions to manage attendance.
+            </p>
+            <!-- Add a button to toggle project details -->
+            <button class="text-blue-500 mt-4 underline" onclick="toggleDetails('project1')">View More Details</button>
+            <!-- Hidden project details -->
+            <div id="project1Details" class="hidden">
+                <div class="mt-6">
+                    <h4 class="text-xl font-semibold text-blue-500">Key Features:</h4>
+                    <ul class="list-disc list-inside text-gray-700 ml-6 mt-2">
+                        <li>Facial Recognition: The project uses state-of-the-art facial recognition algorithms to identify and verify individuals.</li>
+                        <li>Selfie-Based: Attendees can simply take a selfie to mark their attendance, eliminating the need for traditional sign-in methods.</li>
+                        <li>Networking: The system is integrated with a networking component, allowing real-time attendance data to be securely transmitted and accessed remotely.</li>
+                        <li>Data Analytics: Detailed attendance analytics and reports are generated to provide insights for better attendance management.</li>
+                        <li>User-Friendly Interface: The user interface is intuitive and easy to use, making it accessible to both staff and attendees.</li>
+                    </ul>
+                </div>
+                <div class="mt-6">
+                    <h4 class="text-xl font-semibold text-blue-500">Benefits:</h4>
+                    <ul class="list-disc list-inside text-gray-700 ml-6 mt-2">
+                        <li>Efficiency: Attendance tracking becomes faster and more accurate, saving time for both organizers and attendees.</li>
+                        <li>Security: Facial recognition ensures secure attendance verification, reducing the risk of impersonation.</li>
+                        <li>Accessibility: Attendees can mark their attendance from anywhere with an internet connection.</li>
+                        <li>Data Insights: The system provides valuable data for attendance analysis and decision-making.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Speech and Video Facial Emotion Recognition using RNN -->
+        <div class="mt-10 p-6 bg-gray-100 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-blue-500">Project 2: Speech and Video Facial Emotion Recognition using RNN</h3>
+            <p class="text-gray-700 mt-4">
+                The Speech and Video Facial Emotion Recognition project is a groundbreaking initiative aimed at understanding and interpreting human emotions through speech and facial expressions. This project utilizes Recurrent Neural Networks (RNN) to analyze audio and video data, providing real-time emotion recognition.
+            </p>
+            <!-- Add a button to toggle project details -->
+            <button class="text-blue-500 mt-4 underline" onclick="toggleDetails('project2')">View More Details</button>
+            <!-- Hidden project details -->
+            <div id="project2Details" class="hidden">
+                <div class="mt-6">
+                    <h4 class="text-xl font-semibold text-blue-500">Key Features:</h4>
+                    <ul class="list-disc list-inside text-gray-700 ml-6 mt-2">
+                        <li>Multi-Modal Analysis: The project combines speech and facial expression data for a more comprehensive understanding of emotions.</li>
+                        <li>Recurrent Neural Networks: RNNs are employed to capture temporal dependencies in both speech and video data, allowing for context-aware emotion recognition.</li>
+                        <li>Emotion Classification: The system can accurately classify a wide range of emotions, including happiness, sadness, anger, and more.</li>
+                        <li>Real-Time Analysis: Emotion recognition occurs in real-time, making it suitable for applications such as customer feedback analysis and virtual assistants.</li>
+                        <li>Customizable: The model can be fine-tuned and customized to specific applications and datasets.</li>
+                    </ul>
+                </div>
+                <div class="mt-6">
+                    <h4 class="text-xl font-semibold text-blue-500">Benefits:</h4>
+                    <ul class="list-disc list-inside text-gray-700 ml-6 mt-2">
+                        <li>Enhanced Communication: Understanding user emotions enables more empathetic and responsive interactions in human-computer communication.</li>
+                        <li>Applications: This project has applications in customer service, mental health assessment, and user experience enhancement.</li>
+                        <li>Data-Driven Insights: Emotion data can be aggregated and analyzed to gain insights into user sentiment and behavior.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+
+<!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-semibold">Contact Me</h2>
+                <p class="text-gray-300 mt-4">
+                    Feel free to get in touch with me.
+                </p>
+                <!-- Contact Information -->
+                <div class="mt-8">
+                    <p class="text-lg font-semibold">Contact Information:</p>
+                    <ul class="text-gray-300 mt-2">
+                        <li>Father's Name: Krishnamoorthy K</li>
+                        <li>Phone: <a href="tel:+916369664890" class="underline">+916369664890</a></li>
+                        <li>Email: <a href="mailto:ezhilarasikrishnamoorthy00@gmail.com" class="underline">ezhilarasikrishnamoorthy00@gmail.com</a></li>
+                        <li>Location: Gingee, Tamil Nadu</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/ezhilarasi-krishnamoorthy-b8b284227" class="underline" target="_blank">https://www.linkedin.com/in/ezhilarasi-krishnamoorthy</a></li>
+                        <li>Hackerearth: <a href="https://www.hackerearth.com/@ezhil10dec2k" class="underline" target="_blank">https://www.hackerearth.com/@ezhil10dec2k</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Form -->
+                <div class="mt-8">
+                    <form class="max-w-lg mx-auto">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 text-sm font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 text-sm font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-300 text-sm font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Ezhilarasi Krishnamoorthy. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript for smooth scrolling -->
+    <script src="script.js"></script>
+</body>
+</html>
